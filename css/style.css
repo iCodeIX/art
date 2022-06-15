@@ -1,0 +1,228 @@
+
+:root{
+    --primary-color: #EC994B;
+    --light-color: #EFEFEF;
+    --dark-color: #112B3C;
+   
+
+    --main-font: 'Quicksand', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+/*  General settings*/
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    margin:10px;
+}
+
+.main-container{
+   
+}
+/* header nav */
+
+header{
+    display:flex;
+    justify-content: space-between;
+   
+    padding:5px;
+    background:var(--primary-color);
+}
+
+.logo{
+    width: 50px;
+    
+}
+
+.menu-icon{
+    
+    text-align: right;
+    color: var(--light-color);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.nav-list{
+    display: none;
+    padding: 10px;
+}
+
+.active-nav{
+    display: block;
+
+}
+.nav-list li{
+   margin-bottom:10px;
+   
+}
+.nav-list li a{
+   color:var(--dark-color);
+   font-weight: 600;
+}
+
+
+/* about artist */
+
+.artist-fav-quote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.artist-fav-quote{
+    padding: 20px;
+    text-align:center;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+  
+}
+
+.artist-photo-container{
+    max-width: 100%;
+    padding:20px;
+}
+
+.artist-photo{
+    width: 100%;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+/* OFFERS */
+.offers{
+    padding: 10px;
+}
+
+.offers p{
+    font-weight: 600;
+}
+
+.offers-list{
+    padding: 10px;
+}
+
+
+/* gallery */
+
+.gallery-container{
+    padding: 10px;
+}
+
+.brush-icon{
+    color:var(--primary-color);
+}
+.gallery-container p{
+    font-weight: 600;
+}
+
+.tab-samples{
+    display: flex;
+    width:100%;
+    padding: 10px;
+}
+
+.portraits-tab, .paintings-tab{
+    width:50%;
+    font-weight: 600;
+    text-align: center;
+    padding:10px;
+    border: 1px solid var(--dark-color);
+    letter-spacing: 5px;
+}
+
+.active-tab{
+    background-color: var(--dark-color);
+    color : var(--light-color);
+}
+.portraits-list, .paintings-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+   
+}
+
+.paintings-list{
+    display: none;
+}
+
+
+.portrait-item, .painting-item{
+    width: 50%;
+    padding:10px;
+   
+}
+
+.portrait-item img, .painting-item img{
+    width: 100%;
+    cursor:pointer;
+    border: 1px solid #ccc;
+
+}
+
+.full-image-modal{
+    height: 100vh;
+    max-width: 100%;
+    background-color:var(--light-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.full-image{
+    width: 100%;
+
+}
+
+/* contacts */
+
+.contacts{
+    padding:10px;
+}
+
+.fb-icon{
+    color: blue;
+}
+
+.email-icon{
+    color: red;
+}
+
+
+/* go up button */
+
+#go--up-btn{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
