@@ -187,7 +187,7 @@ header{
 .full-image-modal{
     max-width: 100%;
     background-color:var(--light-color);
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;  
 }
