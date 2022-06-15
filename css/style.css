@@ -128,6 +128,7 @@ header{
 /* gallery */
 
 .gallery-container{
+    position: relative;
     padding: 10px;
 }
 
@@ -186,7 +187,7 @@ header{
 .full-image-modal{
     max-width: 100%;
     background-color:var(--light-color);
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;  
 }
