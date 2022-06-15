@@ -184,13 +184,11 @@ header{
 }
 
 .full-image-modal{
-    height: 100vh;
     max-width: 100%;
     background-color:var(--light-color);
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 0;
-    
+    left: 0;  
 }
 
 .full-image{
