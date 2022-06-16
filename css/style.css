@@ -242,6 +242,7 @@ header{
     border-radius: 50%;
     padding: 10px;
     background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 
@@ -336,7 +337,7 @@ header{
 }
 
 .portraits-tab, .paintings-tab{
-    font-size: 1vw;
+    font-size: 2vw;
     cursor: pointer;   
 }
 
