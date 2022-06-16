@@ -39,7 +39,6 @@ var paintingItem = document.querySelectorAll(".painting-item");
 portraitItem.forEach(function(element,index,array){
 
     element.addEventListener("click",arrow =>{
-            fullImageModal.innerHTML ="";
             showfullImage(index,"portrait");
         });
     
@@ -49,7 +48,6 @@ portraitItem.forEach(function(element,index,array){
 paintingItem.forEach(function(element,index,array){
 
     element.addEventListener("click",arrow =>{
-            fullImageModal.innerHTML ="";
             showfullImage(index,"painting");
         });
     
@@ -57,22 +55,33 @@ paintingItem.forEach(function(element,index,array){
 });
 
 
+var fullImage = document.querySelector(".full-image");
+
 function showfullImage(i, s){
-    var fullImageContainer = document.createElement("img");
-    
+
+    fullImageModal.style.display = "block";
+   
     if(s == "portrait"){
-        fullImageContainer.setAttribute("src", portraitItem[i].children[0].src);
+        fullImage.src =  portraitItem[i].children[0].src;
     }
     else if(s == "painting"){
-        fullImageContainer.setAttribute("src", paintingItem[i].children[0].src);
+        fullImage.src =  paintingItem[i].children[0].src;
     }
-   
-    fullImageContainer.className = "full-image";
-    fullImageModal.appendChild(fullImageContainer);
 
 }
 
-   
+//close full image modal
+
+
+var closeFullImageModal = document.querySelector(".close-full-image-modal");
+
+if(closeFullImageModal != null){
+  closeFullImageModal.addEventListener("click", function(){
+    
+    fullImageModal.style.display = "none";
+});
+}
+
 
 //Get the button
 var goUpBtn = document.getElementById("go--up-btn");
