@@ -74,13 +74,13 @@ header{
 }
 
 
-/* about artist */
+/* artist favorite quote */
 
 .artist-fav-quote-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    height: 50vh;
 }
 
 .artist-fav-quote{
@@ -92,6 +92,7 @@ header{
   
 }
 
+/* about me */
 .artist-photo-container{
     max-width: 100%;
     padding: 10px 20px;
@@ -105,6 +106,7 @@ header{
 .personal-info{
     text-align: justify;
     padding: 10px;
+    font-size: 3vw;
 }
 /* OFFERS */
 .offers{
@@ -113,6 +115,7 @@ header{
 
 .offers p{
     font-weight: 600;
+    font-size: 3vw;
 }
 
 .offers-list{
@@ -128,6 +131,7 @@ header{
 
 .contacts p{
     font-weight: 600;
+    font-size: 3vw;
 }
 .fb-icon{
     color: blue;
@@ -149,6 +153,7 @@ header{
 }
 .gallery-container p{
     font-weight: 600;
+    font-size: 3vw;
 }
 
 .tab-samples{
@@ -164,6 +169,7 @@ header{
     padding:10px;
     border: 1px solid var(--primary-color);
     letter-spacing: 5px;
+    font-size: 3vw;
 }
 
 .active-tab{
@@ -236,4 +242,117 @@ header{
     border-radius: 50%;
     padding: 10px;
     background-color: var(--secondary-color);
+}
+
+
+
+/* for desktop view */
+
+@media(min-width:600px){
+
+    /* font sizes */
+    .gallery-container p,  .offers p, .contacts p{
+        font-size: 2vw;
+    }
+
+    
+
+/* header nav*/
+
+   .menu-icon{
+    display: none;
+   }
+
+   .nav-list{
+    display: flex;
+   }
+
+   .nav-list li{
+    margin: 10px;
+   }
+
+   .nav-list li a:hover{
+    color: var(--light-color);
+   }
+/* artist quote */
+.artist-fav-quote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+   .artist-fav-quote-container{
+    background-image: url("../images/quote-bground.jpg");
+    
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+.artist-fav-quote{
+    font-size: 35px;
+    color: var(--light-color);
+    text-align: right;
+}
+
+
+/* about me -artist */
+.about-me{
+    display: flex;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius:0 0 20px 20px;
+}
+
+.artist-photo-container{
+    text-align: center;
+}
+.artist-photo{
+    width: 70%;
+}
+
+.personal-info{
+   
+    text-align: left;
+    color: var(--light-color);
+    
+}
+/* offers */
+/* contacts */
+.offers, .contacts{
+    padding:20px;
+}
+
+
+/* gallery */
+
+.gallery-lists-container{
+    background-color: var(--primary-color);
+    border-radius: 20px 20px 0 0;
+}
+.tab-samples{
+    width: 50%;
+}
+
+.portraits-tab, .paintings-tab{
+    font-size: 1vw;
+    cursor: pointer;   
+}
+
+.portrait-item, .painting-item{
+    width: 20%;
+}
+
+.full-image-modal{
+    text-align: center;
+}
+.full-image{
+    width:auto;
+}
+
+.close-full-image-modal{
+    cursor: pointer;
+}
+
 }
