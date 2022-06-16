@@ -1,10 +1,10 @@
 
 :root{
-    --primary-color: #EC994B;
-    --light-color: #EFEFEF;
-    --dark-color: #112B3C;
-   
 
+    --primary-color: #112B3C;
+    --secondary-color: #EC994B;
+    --light-color: #EFEFEF;
+    
     --main-font: 'Quicksand', sans-serif;
 }
 
@@ -33,26 +33,22 @@ i{
     margin:10px;
 }
 
-.main-container{
-   
-}
 /* header nav */
 
 header{
     display:flex;
     justify-content: space-between;
-   
-    padding:5px;
+    padding:10px;
     background:var(--primary-color);
 }
 
 .logo{
-    width: 50px;
-    
+    color: var(--secondary-color);
+   font-size: 20px; 
+   line-height: 50px;
 }
 
 .menu-icon{
-    
     text-align: right;
     color: var(--light-color);
     cursor: pointer;
@@ -73,7 +69,7 @@ header{
    
 }
 .nav-list li a{
-   color:var(--dark-color);
+   color:var(--secondary-color);
    font-weight: 600;
 }
 
@@ -98,13 +94,18 @@ header{
 
 .artist-photo-container{
     max-width: 100%;
-    padding:20px;
+    padding: 10px 20px;
 }
 
 .artist-photo{
     width: 100%;
 }
 
+
+.personal-info{
+    text-align: justify;
+    padding: 10px;
+}
 /* OFFERS */
 .offers{
     padding: 10px;
@@ -125,6 +126,9 @@ header{
     padding:10px;
 }
 
+.contacts p{
+    font-weight: 600;
+}
 .fb-icon{
     color: blue;
 }
@@ -141,7 +145,7 @@ header{
 }
 
 .brush-icon{
-    color:var(--primary-color);
+    color:var(--secondary-color);
 }
 .gallery-container p{
     font-weight: 600;
@@ -158,14 +162,15 @@ header{
     font-weight: 600;
     text-align: center;
     padding:10px;
-    border: 1px solid var(--dark-color);
+    border: 1px solid var(--primary-color);
     letter-spacing: 5px;
 }
 
 .active-tab{
-    background-color: var(--dark-color);
-    color : var(--light-color);
+    background-color: var(--primary-color);
+    color : var(--secondary-color);
 }
+
 .portraits-list, .paintings-list{
     width: 100%;
     display: flex;
@@ -193,7 +198,7 @@ header{
 }
 
 .full-image-modal{
-    max-width: 100%;
+    width: 100%;
     min-height: 100vh;
     background-color:#282A35;
     position: fixed;
@@ -230,5 +235,5 @@ header{
     border: 0;
     border-radius: 50%;
     padding: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
