@@ -105,12 +105,6 @@ header{
     width: 100%;
 }
 
-
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
 /* OFFERS */
 .offers{
     padding: 10px;
@@ -124,6 +118,20 @@ header{
     padding: 10px;
 }
 
+
+/* contacts */
+
+.contacts{
+    padding:10px;
+}
+
+.fb-icon{
+    color: blue;
+}
+
+.email-icon{
+    color: red;
+}
 
 /* gallery */
 
@@ -186,30 +194,29 @@ header{
 
 .full-image-modal{
     max-width: 100%;
-    background-color:var(--light-color);
-    position: absolute;
+    min-height: 100vh;
+    background-color:#282A35;
+    position: fixed;
     top: 0;
-    left: 0;  
+    left: 0;
+    padding: 10px;
+    display: none;
+    z-index: 99;
 }
 
 .full-image{
     width: 100%;
+    max-height: 80vh;
 
 }
 
-/* contacts */
-
-.contacts{
-    padding:10px;
-}
-
-.fb-icon{
-    color: blue;
-}
-
-.email-icon{
+.close-full-image-modal{
     color: red;
+    font-size: 30px;
+    float: right;
 }
+
+
 
 
 /* go up button */
